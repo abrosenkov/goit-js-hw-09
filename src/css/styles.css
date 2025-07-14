@@ -62,6 +62,20 @@ a {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 900px) {
+  .gallery-item {
+    flex-basis: calc((100% - 24px) / 2);
+    max-width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-item {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
 /* ======================================    form styles */
 
 .feedback-form {
